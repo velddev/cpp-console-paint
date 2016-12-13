@@ -71,7 +71,7 @@ void Console::SetWindowSize(int x, int y)
 
 	if (!SetConsoleWindowInfo(GetOutHandle(), TRUE, &info))
 	{
-		
+		WriteLine("[WRN] Cannot set window");
 	}
 }
 

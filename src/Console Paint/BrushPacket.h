@@ -5,6 +5,7 @@ class BrushPacket
 {
 public:
 	Vector2 position;
+	Vector2 size;
 
 	Vector2 posInPacket;
 

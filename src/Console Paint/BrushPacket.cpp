@@ -10,12 +10,21 @@ BrushPacket::BrushPacket(int size)
 	for(int i = 0 ; i < size; i ++)
 	{
 		packet[i] = new char[size];
+		for (int j = 0; j < size; j++)
+		{
+			packet[i][j] = 'x';
+		}
 	}
 	color = new int*[size];
 	for (int i = 0; i < size; i++)
 	{
 		color[i] = new int[size];
+		for(int j = 0; j < size; j++)
+		{
+			color[i][j] = -1;
+		}
 	}
+	this->size = Vector2(size, size);
 }
 
 BrushPacket::~BrushPacket()

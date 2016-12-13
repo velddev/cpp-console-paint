@@ -1,3 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Brush.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="BrushBlock.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="BrushPacket.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Brush.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="BrushBlock.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="BrushPacket.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>hpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cpp">
+      <UniqueIdentifier>{69680a19-a5f7-4290-bf3a-25cfdc9ab3bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hpp">
+      <UniqueIdentifier>{66fb0f0f-a41e-4826-bc0a-6890620e9ef4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
 </Project>

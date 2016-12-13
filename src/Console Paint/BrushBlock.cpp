@@ -4,7 +4,6 @@ BrushBlock::BrushBlock()
 {
 }
 
-
 BrushBlock::~BrushBlock()
 {
 	Brush::~Brush();
@@ -14,11 +13,11 @@ BrushPacket BrushBlock::DoPaint()
 {
 	BrushPacket p = BrushPacket(size);
 
-	for(int x = 0; x < size; x++)
+	for(int x = 0; x < p.size.x; x++)
 	{
-		for(int y = 0; y < size; y++)
+		for(int y = 0; y < p.size.y; y++)
 		{
-			p.Add('X', 15);
+			p.Add(symbol, 15);
 		}
 		p.NewLine();
 	}

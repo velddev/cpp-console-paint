@@ -146,9 +146,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Brush.h" />
     <ClInclude Include="BrushBlock.h" />
     <ClInclude Include="BrushPacket.h" />
