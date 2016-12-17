@@ -43,8 +43,17 @@ void Renderer::Draw(Brush* b, Vector2 pos, Console* console)
 
 		for (int x = pos.x; x < pos.x + p.size.x; x++)
 		{
+			if (x >= size.y)
+			{
+				break;
+			}
 			for (int y = pos.y; y < pos.y + p.size.y; y++)
 			{
+				// TODO: fix X to Y
+				if(y >= size.x)
+				{
+					break;
+				}
 				output += map[y][x];
 			}
 			console->SetCursorPosition(x, pos.y);
