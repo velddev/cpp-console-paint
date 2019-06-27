@@ -11,7 +11,7 @@ BrushBlock::~BrushBlock()
 
 BrushPacket BrushBlock::DoPaint()
 {
-	BrushPacket p = BrushPacket(size);
+	BrushPacket p = BrushPacket(GetSize());
 
 	for(int x = 0; x < p.size.x; x++)
 	{

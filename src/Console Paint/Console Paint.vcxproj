@@ -22,32 +22,32 @@
     <ProjectGuid>{5E039754-E3EB-4308-BD68-5FB3427E1FA1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>InputOutputExampleProject</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -74,6 +74,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)private;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -146,24 +147,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Brush.h" />
-    <ClInclude Include="BrushBlock.h" />
-    <ClInclude Include="BrushPacket.h" />
-    <ClInclude Include="Console.h" />
-    <ClInclude Include="Renderer.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="private\Brush.h" />
+    <ClInclude Include="private\BrushBlock.h" />
+    <ClInclude Include="private\BrushPacket.h" />
+    <ClInclude Include="private\Console.h" />
+    <ClInclude Include="private\Renderer.h" />
+    <ClInclude Include="private\stdafx.h" />
+    <ClInclude Include="private\targetver.h" />
+    <ClInclude Include="private\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Brush.cpp" />
-    <ClCompile Include="BrushBlock.cpp" />
-    <ClCompile Include="BrushPacket.cpp" />
-    <ClCompile Include="Console.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Renderer.cpp" />
-    <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="public\Brush.cpp" />
+    <ClCompile Include="public\BrushBlock.cpp" />
+    <ClCompile Include="public\BrushPacket.cpp" />
+    <ClCompile Include="public\Console.cpp" />
+    <ClCompile Include="public\main.cpp" />
+    <ClCompile Include="public\Renderer.cpp" />
+    <ClCompile Include="public\stdafx.cpp" />
+    <ClCompile Include="public\Vector2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

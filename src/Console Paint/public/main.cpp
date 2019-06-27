@@ -70,7 +70,7 @@ void TickInput(Console* console)
 			coord.Y = InputRecord.Event.MouseEvent.dwMousePosition.Y;
 
 			BrushBlock* b = new BrushBlock();
-			b->size = 9;
+			b->SetSize(9);
 			b->symbol = 'x';
 
 			renderer.Draw(b, Vector2(coord.X, coord.Y), console);
@@ -83,7 +83,7 @@ void TickInput(Console* console)
 			coord.Y = InputRecord.Event.MouseEvent.dwMousePosition.Y;
 
 			BrushBlock* b = new BrushBlock();
-			b->size = 3;
+			b->SetSize(3);
 			b->symbol = ' ';
 
 			renderer.Draw(b, Vector2(coord.X, coord.Y), console);

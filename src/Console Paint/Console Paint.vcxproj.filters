@@ -1,54 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Brush.cpp">
+    <ClCompile Include="public\Brush.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
-    <ClCompile Include="BrushBlock.cpp">
+    <ClCompile Include="public\BrushBlock.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
-    <ClCompile Include="BrushPacket.cpp">
+    <ClCompile Include="public\BrushPacket.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
-    <ClCompile Include="Console.cpp">
+    <ClCompile Include="public\Console.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="public\main.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer.cpp">
+    <ClCompile Include="public\Renderer.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="public\stdafx.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
-    <ClCompile Include="Vector2.cpp">
+    <ClCompile Include="public\Vector2.cpp">
       <Filter>cpp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Brush.h">
+    <ClInclude Include="private\Brush.h">
       <Filter>hpp</Filter>
     </ClInclude>
-    <ClInclude Include="BrushBlock.h">
+    <ClInclude Include="private\BrushBlock.h">
       <Filter>hpp</Filter>
     </ClInclude>
-    <ClInclude Include="BrushPacket.h">
+    <ClInclude Include="private\BrushPacket.h">
       <Filter>hpp</Filter>
     </ClInclude>
-    <ClInclude Include="Console.h">
+    <ClInclude Include="private\Console.h">
       <Filter>hpp</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer.h">
+    <ClInclude Include="private\Renderer.h">
       <Filter>hpp</Filter>
     </ClInclude>
-    <ClInclude Include="stdafx.h">
+    <ClInclude Include="private\stdafx.h">
       <Filter>hpp</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
+    <ClInclude Include="private\targetver.h">
       <Filter>hpp</Filter>
     </ClInclude>
-    <ClInclude Include="Vector2.h">
+    <ClInclude Include="private\Vector2.h">
       <Filter>hpp</Filter>
     </ClInclude>
   </ItemGroup>
